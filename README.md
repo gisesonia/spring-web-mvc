@@ -5,5 +5,3 @@
 > Branch restapi - segunda parte como usar rest
 
 ###### Curso da Digital Innovation One de Spring 
-
-

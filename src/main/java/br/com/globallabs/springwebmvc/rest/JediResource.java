@@ -24,17 +24,6 @@ public class JediResource {
         return service.findAll();
     }
 
-    /* Rota por id
-     @GetMapping("/api/jedi/{id}")
-      public Jedi getJedi(@PathVariable("id") Long id){
-          final Optional<Jedi> jedi = repository.findById(id);
-
-          if(jedi.isPresent()){
-              return jedi.get();
-          } else {
-              throw new JediNotFoundException();
-          }
-      }*/
     @GetMapping("/api/jedi/{id}")
     public ResponseEntity<Jedi> getJedi(@PathVariable("id") Long id) {//ResponseEntity do Spring
         final Jedi jedi = service.findById(id);
